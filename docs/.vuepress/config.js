@@ -1,4 +1,7 @@
 module.exports = {
+  markdown: {
+    lineNumbers: true
+  },
   locales: {
     '/': {
       lang: 'en-US',
@@ -48,8 +51,59 @@ module.exports = {
           { text: '起步', link: '/zh/guide/' }
         ],
         sidebar: [
-          '/zh/guide/',
-          '/zh/guide/install'
+          {
+            title: '基础',   // 必要的
+            collapsable: false, // 可选的, 默认值是 true,
+            sidebarDepth: 2,    // 可选的, 默认值是 1
+            children: [
+              '/zh/guide/',
+              '/zh/guide/install',
+              '/zh/guide/proce',
+              '/zh/guide/stuck'
+            ]
+          },
+          {
+            title: '进阶',   // 必要的
+            collapsable: false, // 可选的, 默认值是 true,
+            sidebarDepth: 2,    // 可选的, 默认值是 1
+            children: [
+              '/zh/next/',
+              '/zh/next/env',
+              '/zh/next/route',
+              '/zh/next/controller',
+              '/zh/next/request',
+              '/zh/next/response',
+              '/zh/next/db',
+              '/zh/next/model',
+              '/zh/next/verify',
+            ]
+          },
+          {
+            title: '高级',   // 必要的
+            collapsable: false, // 可选的, 默认值是 true,
+            sidebarDepth: 2,    // 可选的, 默认值是 1
+            children: [
+              '/zh/adv/',
+            ]
+          },
+          {
+            title: '命令行',   // 必要的
+            collapsable: false, // 可选的, 默认值是 true,
+            sidebarDepth: 2,    // 可选的, 默认值是 1
+            children: [
+              '/zh/cmd/',
+            ]
+          },
+          {
+            title: '更多',   // 必要的
+            collapsable: false, // 可选的, 默认值是 true,
+            sidebarDepth: 2,    // 可选的, 默认值是 1
+            children: [
+              '/zh/more/',
+              '/zh/more/contact',
+            ]
+          },
+
         ]
       }
     }
