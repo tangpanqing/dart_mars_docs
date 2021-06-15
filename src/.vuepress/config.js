@@ -65,27 +65,26 @@ module.exports = {
             ]
           },
           {
-            title: '进阶',   // 必要的
+            title: '使用',   // 必要的
             collapsable: false, // 可选的, 默认值是 true,
             sidebarDepth: 2,    // 可选的, 默认值是 1
             children: [
-              '/zh/next/',
-              '/zh/next/env',
-              '/zh/next/route',
-              '/zh/next/controller',
-              '/zh/next/request',
-              '/zh/next/response',
-              '/zh/next/db',
-              '/zh/next/model',
-              '/zh/next/verify',
+              '/zh/use/',
+              '/zh/use/env',
+              '/zh/use/route',
+              '/zh/use/controller',
+              '/zh/use/request',
+              '/zh/use/response',
+              '/zh/use/model',
+              '/zh/use/verify',
             ]
           },
           {
-            title: '高级',   // 必要的
+            title: '数据库',   // 必要的
             collapsable: false, // 可选的, 默认值是 true,
             sidebarDepth: 2,    // 可选的, 默认值是 1
             children: [
-              '/zh/adv/',
+              '/zh/db/',
             ]
           },
           {
@@ -105,7 +104,6 @@ module.exports = {
               '/zh/more/contact',
             ]
           },
-
         ]
       }
     }
