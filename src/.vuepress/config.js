@@ -1,5 +1,6 @@
 module.exports = {
   dest: './docs',
+  base: '/dart_mars_docs/',
   markdown: {
     lineNumbers: true
   },
