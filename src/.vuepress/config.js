@@ -1,5 +1,5 @@
 module.exports = {
-  dest: '/dist',
+  dest: './docs',
   markdown: {
     lineNumbers: true
   },

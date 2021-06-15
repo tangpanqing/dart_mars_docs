@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>如何使用控制器 | DartMars</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="DartMars 描述">
+    
+    <link rel="preload" href="/assets/css/0.styles.89e32c3d.css" as="style"><link rel="preload" href="/assets/js/app.fd0c6355.js" as="script"><link rel="preload" href="/assets/js/3.16052966.js" as="script"><link rel="preload" href="/assets/js/19.9b018def.js" as="script"><link rel="prefetch" href="/assets/js/10.5931e716.js"><link rel="prefetch" href="/assets/js/11.b72b9390.js"><link rel="prefetch" href="/assets/js/12.2fa5c336.js"><link rel="prefetch" href="/assets/js/13.2b9ef0f7.js"><link rel="prefetch" href="/assets/js/14.4b7d60bd.js"><link rel="prefetch" href="/assets/js/15.d8e0b377.js"><link rel="prefetch" href="/assets/js/16.1d2f6dcc.js"><link rel="prefetch" href="/assets/js/17.f336573f.js"><link rel="prefetch" href="/assets/js/18.c0c8a535.js"><link rel="prefetch" href="/assets/js/20.61a85e02.js"><link rel="prefetch" href="/assets/js/21.ed44e5e1.js"><link rel="prefetch" href="/assets/js/22.a0f35573.js"><link rel="prefetch" href="/assets/js/23.9ccc7191.js"><link rel="prefetch" href="/assets/js/24.f6c3f41d.js"><link rel="prefetch" href="/assets/js/25.f6559d60.js"><link rel="prefetch" href="/assets/js/26.158ef552.js"><link rel="prefetch" href="/assets/js/4.c2a4d033.js"><link rel="prefetch" href="/assets/js/5.47f447cf.js"><link rel="prefetch" href="/assets/js/6.827e7aff.js"><link rel="prefetch" href="/assets/js/7.512ba859.js"><link rel="prefetch" href="/assets/js/8.e0ecb633.js"><link rel="prefetch" href="/assets/js/9.8ce94e3f.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.4a8594da.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.89e32c3d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zh/" class="home-link router-link-active"><!----> <span class="site-name">DartMars</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zh/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/zh/guide/" class="nav-link">
+  起步
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/zh/next/controller.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/zh/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/zh/guide/" class="nav-link">
+  起步
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/zh/next/controller.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>基础</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zh/guide/" class="sidebar-link">DartMars是什么</a></li><li><a href="/zh/guide/install.html" class="sidebar-link">如何安装DartMars</a></li><li><a href="/zh/guide/proce.html" class="sidebar-link">DartMars是如何执行的</a></li><li><a href="/zh/guide/stuck.html" class="sidebar-link">DartMars的结构是怎么样的</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>进阶</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zh/next/" aria-current="page" class="sidebar-link">如何使用DartMars</a></li><li><a href="/zh/next/env.html" class="sidebar-link">如何使用多环境</a></li><li><a href="/zh/next/route.html" class="sidebar-link">如何使用路由</a></li><li><a href="/zh/next/controller.html" aria-current="page" class="active sidebar-link">如何使用控制器</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zh/next/controller.html#如何使用控制器" class="sidebar-link">如何使用控制器</a></li><li class="sidebar-sub-header"><a href="/zh/next/controller.html#如何导入依赖" class="sidebar-link">如何导入依赖</a></li><li class="sidebar-sub-header"><a href="/zh/next/controller.html#什么是控制器类和方法" class="sidebar-link">什么是控制器类和方法</a></li><li class="sidebar-sub-header"><a href="/zh/next/controller.html#简单的请求和响应" class="sidebar-link">简单的请求和响应</a></li></ul></li><li><a href="/zh/next/request.html" class="sidebar-link">如何接收请求信息</a></li><li><a href="/zh/next/response.html" class="sidebar-link">如何返回响应信息</a></li><li><a href="/zh/next/db.html" class="sidebar-link">如何使用数据库</a></li><li><a href="/zh/next/model.html" class="sidebar-link">如何使用模型</a></li><li><a href="/zh/next/verify.html" class="sidebar-link">如何验证数据</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>高级</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zh/adv/" class="sidebar-link">DartMars还有哪些高级使用</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>命令行</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zh/cmd/" class="sidebar-link">如何使用DarMars命令行工具</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>更多</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zh/more/" class="sidebar-link">更多</a></li><li><a href="/zh/more/contact.html" class="sidebar-link">如何联系我</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="如何使用控制器"><a href="#如何使用控制器" class="header-anchor">#</a> 如何使用控制器</h2> <p>控制器，负责处理路由转发过来的请求，并且返回处理的结果。</p> <p>默认情况下，当你使用命令行工具，成功创建一个项目后，在项目的lib/app/controller文件夹，会自动创建一个名字为HomeController，这是一个示例控制器，它的基本代码如下</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import 'package:dart_mars_demo/bootstrap/Context.dart';
+import 'package:dart_mars_demo/bootstrap/meta/RouteMeta.dart';
+
+class HomeController {
+  @RouteMeta('/', 'GET')
+  static void index(Context ctx) async {
+    ctx.html(&quot;hello world&quot;);
+  }
+
+  @RouteMeta('/other', 'GET')
+  static void other(Context ctx) async {
+    String text = ctx.getString('text');
+    // some other code
+    ctx.html(&quot;get som text from web : &quot; + text);
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>非常简单的一个示例。我们来认识一下它们。</p> <h2 id="如何导入依赖"><a href="#如何导入依赖" class="header-anchor">#</a> 如何导入依赖</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>import 'package:dart_mars_demo/bootstrap/Context.dart';
+import 'package:dart_mars_demo/bootstrap/meta/RouteMeta.dart';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>依赖是指当前文件所需要的外部功能文件。上面的代码，导入了两个依赖。</p> <p>Context.dart 文件里，定义的有Context类，它提供了一些接收信息的方法，以及输出信息的方法。</p> <p>RouteMeta.dart 文件里，定义的有RouteMeta类，它是一种修饰，来提醒开发者或者程序，因该以什么请求方式，什么请求路径，才能访问它所修饰的代码快。</p> <h2 id="什么是控制器类和方法"><a href="#什么是控制器类和方法" class="header-anchor">#</a> 什么是控制器类和方法</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>class HomeController {
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>这一行告诉我们，这个文件定义了一个控制器类，名字为 HomeController。 这个名字以Controller为结尾，是一种约定俗成的写法。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>static void index(Context ctx) async {
+// ...
+static void other(Context ctx) async {
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>这两行，即是定义了两个方法，名字分别是 index 和 other 。 其中有一些关键字，需要说明：</p> <p>关键字 static 告诉我们，他们是静态方法。</p> <p>也就是说，我们可以使用 HomeController.index 和 HomeController.other 直接使用他们。</p> <p>关键字 void 告诉我们，这两个方法只是处理代码流程，并不返回信息。</p> <p>关键字 async 告诉我们，这两个方法支持异步处理。</p> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>staic,void,async 这三各关键字对于一个控制器的方法非常重要，千万不要忘记他们。</p></div> <h2 id="简单的请求和响应"><a href="#简单的请求和响应" class="header-anchor">#</a> 简单的请求和响应</h2> <p>上面的index方法，里面只有一行代码</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ctx.html(&quot;hello world&quot;);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>它的意思是，输出一句话 hello world 给浏览器请求。输出的内容类型是hmtl类型。</p> <p>上面的other，里面有三行代码</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>String text = ctx.getString('text');
+// some other code
+ctx.html(&quot;get som text from web : &quot; + text);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>它的意思是，接收请求参数 text, 并且再输出一句话给浏览器。</p> <p>其中 ctx.getString('text') 即是接收请求参数的，</p> <p>它表明接收的参数名字是text，接收的参数类型是String, 也就是字符串</p> <p>接收请求信息，返回响应信息，相关的内容还有很多，在接下来的两节里，我们将深入认识他们。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/zh/next/route.html" class="prev">
+        如何使用路由
+      </a></span> <span class="next"><a href="/zh/next/request.html">
+        如何接收请求信息
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.fd0c6355.js" defer></script><script src="/assets/js/3.16052966.js" defer></script><script src="/assets/js/19.9b018def.js" defer></script>
+  </body>
+</html>
