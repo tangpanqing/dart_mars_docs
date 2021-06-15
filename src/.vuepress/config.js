@@ -87,6 +87,7 @@ module.exports = {
               '/zh/db/',
               '/zh/db/connection',
               '/zh/db/curd',
+              '/zh/db/link',
             ]
           },
           {

@@ -16,6 +16,9 @@ import 'package:dart_mars_demo/bootstrap/db/Db.dart';
 
 ```
 List<Map<String,dynamic>> list = await Db('article').select();
+
+//转换成模型
+List<Article> articleList = list.map((e) => Article.fromJson(ConvertHelper.keyToHump(e))).toList();
 ```
 
 通过以上代码，即可查询出该表所有数据。它产生的SQL语句如下：
