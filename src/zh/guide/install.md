@@ -16,7 +16,11 @@ dart pub global run dart_mars --serve dev
 
 经过以上命令，如果不出意外，你将看到命令行提示:
 
-有一个本地HTTP服务已经开启，在80端口
+```
+Http Server has start, port=80
+Env type is dev
+Open browser and vist http://127.0.0.1:80 , you can see some info
+```
 
 此时，你也可以打开浏览器，访问本地服务器 http://127.0.0.1 或者 http://localhost 
 
