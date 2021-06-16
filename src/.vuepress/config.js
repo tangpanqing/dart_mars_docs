@@ -85,6 +85,9 @@ module.exports = {
             sidebarDepth: 2,    // 可选的, 默认值是 1
             children: [
               '/zh/db/',
+              '/zh/db/connection',
+              '/zh/db/curd',
+              '/zh/db/link',
             ]
           },
           {
