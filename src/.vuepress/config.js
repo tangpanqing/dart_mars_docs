@@ -78,6 +78,7 @@ module.exports = {
               '/zh/use/model',
               '/zh/use/verify',
               '/zh/use/upload',
+              '/zh/use/download',
             ]
           },
           {
