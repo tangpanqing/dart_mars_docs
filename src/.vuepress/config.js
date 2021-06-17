@@ -77,6 +77,7 @@ module.exports = {
               '/zh/use/response',
               '/zh/use/model',
               '/zh/use/verify',
+              '/zh/use/upload',
             ]
           },
           {
