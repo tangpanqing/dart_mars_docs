@@ -25,5 +25,37 @@ ctx.html('hello world');
 
 在实际开发过程中，我们需要返回给客户端固定结构的 `json` 数据，比如
 ```json
-{"code": 200, "msg": "请求成功", "data": {"name":"tom"}}
+{
+    "code":200,
+    "msg":"请求成功",
+    "data":{
+        "name":"tom"
+    }
+}
+```
+
+你可以使用 `ctx.json`
+
+```dart
+ctx.json(jsonEncode({
+    "code":200,
+    "msg":"请求成功",
+    "data":{
+        "name":"tom"
+    } 
+}));
+```
+
+更方便的，你可以使用 `ctx.showSuccess`
+
+```dart
+ctx.showSuccess("请求成功", {
+    "name":"tom"
+});
+```
+
+如果失败的话，你可以使用 `ctx.showError`
+
+```dart
+ctx.showError("请求失败");
 ```
