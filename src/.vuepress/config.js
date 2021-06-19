@@ -60,8 +60,8 @@ module.exports = {
             children: [
               '/zh/guide/',
               '/zh/guide/install',
-              '/zh/guide/proce',
-              '/zh/guide/stuck'
+            //  '/zh/guide/proce',
+            //  '/zh/guide/stuck'
             ]
           },
           {
@@ -75,14 +75,13 @@ module.exports = {
               '/zh/use/controller',
               '/zh/use/request',
               '/zh/use/response',
-              '/zh/use/model',
               '/zh/use/verify',
               '/zh/use/upload',
               '/zh/use/download',
             ]
           },
           {
-            title: '数据库',   // 必要的
+            title: '数据库和模型',   // 必要的
             collapsable: false, // 可选的, 默认值是 true,
             sidebarDepth: 2,    // 可选的, 默认值是 1
             children: [

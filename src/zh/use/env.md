@@ -4,11 +4,11 @@
 
 实际上，当你在使用如下命令的时候，即使用了开发环境
 
-```
+```bash
 dart pub global run dart_mars --serve dev
 ```
 
-在这种情况下，DartMars将加载env/dev.yaml文件，并且使用里面的配置信息。
+在这种情况下，`DartMars` 将加载 `env/dev.yaml` 文件，并且使用里面的配置信息。
 
 总共有三种环境，列表如下
 
@@ -43,17 +43,17 @@ dart pub global run dart_mars --serve dev
 
 在实际的开发过程中，你可能需要添加自己的环境参数。
 
-比如某个Api地址可能根据环境的不同而改变，你可以定义一个变量，
+比如某个 `Api` 地址可能根据环境的不同而改变，你可以定义一个变量，
 
-```
+```dart
 apiUrl: https://www.xxxx.com
 ```
 
-然后，在所有能访问到Context的地方，你都可以访问到这个定义的变量。
+然后，在所有能访问到 `Context` 的地方，你都可以访问到这个定义的变量。
 
 比如在某控制器内
 
-```
+```dart
 @RouteMeta('/', 'GET')
 static void index(Context ctx) async {
     String apiUrl = ctx.env['apiUrl'].toString();

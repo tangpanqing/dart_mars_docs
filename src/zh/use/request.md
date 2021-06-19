@@ -2,7 +2,7 @@
 
 在前面的章节中，我们提到了接收请求信息，并用到了一个基本方法
 
-```
+```dart
 String text = ctx.getString('text');
 ```
 
@@ -23,25 +23,25 @@ String text = ctx.getString('text');
 注意：
 
 1. 如果通过上述方法获取不到相应的参数值，将会返回默认值
-2. Dart里的浮点数，就只有Doulbe类型。没有其他语言里的Float,Double之分
+2. `Dart` 里的浮点数，就只有 `Doulbe` 类型。没有其他语言里的 `Float`, `Double` 之分
 
 ## 如何修改默认值
 
 上述方法，都有默认值。
 
-在一些情况下，我们需要修改默认值，比如客户端查询一个信息列表，通常会传过过来一个分页数量的参数 pageSize ，表示这次请求需要返回多少条数据。
+在一些情况下，我们需要修改默认值，比如客户端查询一个信息列表，通常会传过过来一个分页数量的参数 `pageSize` ，表示这次请求需要返回多少条数据。
 
 如果写成这样
-```
+```dart
 int pageSize = ctx.getPositiveInt('pageSize');
 ```
-那么它的默认值即是0， 也就是说如果找不到传入的参数 pageSize, 或者传入的参数 pageSize 不是正整数的情况下，返回值将是0，显然这不符合我们的需求。
+那么它的默认值即是0， 也就是说如果找不到传入的参数 `pageSize`, 或者传入的参数 `pageSize` 不是正整数的情况下，返回值将是 `0`，显然这不符合我们的需求。
 
 像下面这样做
-```
+```dart
 int pageSize = ctx.getPositiveInt('pageSize', def: 20);
 ```
-可以多传入一个命名参数def，表示默认值是20，即可符合我们的需求。
+可以多传入一个命名参数 `def`，表示默认值是 `20`，即可符合我们的需求。
 
 其他方法，也有这样的参数，如果需要，可以使用他们。
 
@@ -55,11 +55,11 @@ int pageSize = ctx.getPositiveInt('pageSize', def: 20);
 4. cookie
 5. url
 
-默认情况下，当我们使用类似于 ctx.getString 方法，获取到的参数，来自于上述所有类型的全部集合。
+默认情况下，当我们使用类似于 `ctx.getString` 方法，获取到的参数，来自于上述所有类型的全部集合。
 
-如果需要指定获取参数的类型，可以使用命名参数 from，例如
+如果需要指定获取参数的类型，可以使用命名参数 `from`，例如
 
-```
+```dart
 ctx.getString('text', from: 0);   //从全部参数里找text   
 ctx.getString('text', from: 1);   //从请求头header里找   
 ctx.getString('text', from: 2);   //从url的查询参数里找   

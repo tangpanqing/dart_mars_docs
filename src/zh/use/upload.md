@@ -1,6 +1,6 @@
 ## 如何上传文件
 
-```
+```dart
   @RouteMeta('/upload', 'POST')
   static void upload(Context ctx) async {
     UploadFile uploadFile = ctx.getUploadFile('file');
