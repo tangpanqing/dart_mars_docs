@@ -35,7 +35,7 @@ String text = ctx.getString('text');
 ```dart
 int pageSize = ctx.getPositiveInt('pageSize');
 ```
-那么它的默认值即是0， 也就是说如果找不到传入的参数 `pageSize`, 或者传入的参数 `pageSize` 不是正整数的情况下，返回值将是 `0`，显然这不符合我们的需求。
+那么它的默认值即是 `0`， 也就是说如果找不到传入的参数 `pageSize`, 或者传入的参数 `pageSize` 不是正整数的情况下，返回值将是 `0`，显然这不符合我们的需求。
 
 像下面这样做
 ```dart
