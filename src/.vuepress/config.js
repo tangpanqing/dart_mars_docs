@@ -75,8 +75,7 @@ module.exports = {
               '/zh/use/request',
               '/zh/use/response',
               '/zh/use/verify',
-              '/zh/use/upload',
-              '/zh/use/download',
+              '/zh/use/uploadAndDownload',
               '/zh/use/cache',
               '/zh/use/messageQueue',
             ]
@@ -101,16 +100,6 @@ module.exports = {
               '/zh/cmd/create',
               '/zh/cmd/serve',
               '/zh/cmd/compile',
-            ]
-          },
-          {
-            title: '部署',
-            collapsable: false,
-            sidebarDepth: 2,
-            children: [
-              '/zh/deploy/',
-              '/zh/deploy/withNothting',
-              '/zh/deploy/withNginx',
             ]
           },
           {
