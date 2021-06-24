@@ -97,22 +97,3 @@ await Db('article')
 ```sql
 SElECT type,count(type) as count_type FROM article WHERE type = 1 GROUP BY type HAVING count_type > 10
 ```
-
-## 如何 (where)
-
-如果需要筛选条件，直接 `.where` 即可
-
-```dart
-List<DbColumn> whereCondition = [DbColumn('type', '=', 1)];
-
-List<Map<String,dynamic>> list = await Db('article').where(whereCondition).select();
-
-//转换成模型
-List<Article> articleList = list.map((e) => Article.fromJson(ConvertHelper.keyToHump(e))).toList();
-```
-
-它产生的 `SQL` 语句是
-
-```sql
-SElECT * FROM article WHERE type = 1
-```

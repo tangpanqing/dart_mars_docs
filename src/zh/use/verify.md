@@ -4,7 +4,7 @@
 
 例如验证某字符串是不是空字符串
 
-```
+```dart
 String s1 = '';
 true == VerifyHelper.empty(s1);
 
@@ -14,7 +14,7 @@ true == VerifyHelper.empty(s2);
 
 例如验证某数值是不是等于 `0`
 
-```
+```dart
 int n1 = 0;
 true == VerifyHelper.zero(n1);
 

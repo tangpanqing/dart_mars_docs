@@ -1,5 +1,9 @@
 ## 如何上传文件
 
+上传文件时，请求内容类型 `contentType` 请选择 `multipart/form-data`
+
+使用 `ctx.getUploadFile` 来获取上传的文件，该文件类型为 `UploadFile`
+
 ```dart
   @RouteMeta('/upload', 'POST')
   static void upload(Context ctx) async {

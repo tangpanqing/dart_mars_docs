@@ -26,16 +26,16 @@ dart pub global run dart_mars --serve dev
 
 打开任一环境文件，你将看到里面配置的基本参数
 
-| 参数名称      | 默认值        | 作用                |
-| -------------|---------------| -------------------| 
-| dbHost       | localhost     | 数据库所在服务器地址 |
-| dbPort       | 3306          | 数据库连接所用端口   |
-| dbUser       | root          | 数据库连接用户名     |
-| dbPassword   | root          | 数据库连接密码       |
-| dbName       | example       | 数据库名            |
-| sslCertName  | cert/cert.pem | 加密证书地址        |
-| sslKeyName   | cert/key.pem  | 加密证书密钥地址    |
-| sslPassword  |               | 加密证书密码        |
+| 参数名称          | 默认值        | 作用                |
+| -----------------|---------------| -------------------| 
+| dbHost           | localhost     | 数据库所在服务器地址 |
+| dbPort           | 3306          | 数据库连接所用端口   |
+| dbUser           | root          | 数据库连接用户名     |
+| dbPassword       | root          | 数据库连接密码       |
+| dbName           | example       | 数据库名            |
+| ssl              | off           | 打开或关闭ssl       |
+| sslCertificate   | cert/cert.pem | ssl证书地址        |
+| sslCertificateKey| cert/key.pem  | ssl证书密钥地址    |
 
 你可以根据自己的实际情况来调整。
 

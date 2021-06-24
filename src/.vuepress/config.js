@@ -54,20 +54,19 @@ module.exports = {
         ],
         sidebar: [
           {
-            title: '基础',   // 必要的
-            collapsable: false, // 可选的, 默认值是 true,
-            sidebarDepth: 2,    // 可选的, 默认值是 1
+            title: '基础',
+            collapsable: false,
+            sidebarDepth: 2,
             children: [
               '/zh/guide/',
               '/zh/guide/install',
-            //  '/zh/guide/proce',
-            //  '/zh/guide/stuck'
+              '/zh/guide/update',
             ]
           },
           {
-            title: '使用',   // 必要的
-            collapsable: false, // 可选的, 默认值是 true,
-            sidebarDepth: 2,    // 可选的, 默认值是 1
+            title: '使用',
+            collapsable: false,
+            sidebarDepth: 2,
             children: [
               '/zh/use/',
               '/zh/use/env',
@@ -81,9 +80,9 @@ module.exports = {
             ]
           },
           {
-            title: '数据库和模型',   // 必要的
-            collapsable: false, // 可选的, 默认值是 true,
-            sidebarDepth: 2,    // 可选的, 默认值是 1
+            title: '数据库和模型',
+            collapsable: false,
+            sidebarDepth: 2,
             children: [
               '/zh/db/',
               '/zh/db/connection',
@@ -92,17 +91,28 @@ module.exports = {
             ]
           },
           {
-            title: '命令行',   // 必要的
-            collapsable: false, // 可选的, 默认值是 true,
-            sidebarDepth: 2,    // 可选的, 默认值是 1
+            title: '命令行',
+            collapsable: false,
+            sidebarDepth: 2,
             children: [
               '/zh/cmd/',
+              '/zh/cmd/create',
+              '/zh/cmd/serve',
+              '/zh/cmd/compile',
             ]
           },
           {
-            title: '更多',   // 必要的
-            collapsable: false, // 可选的, 默认值是 true,
-            sidebarDepth: 2,    // 可选的, 默认值是 1
+            title: '部署',
+            collapsable: false,
+            sidebarDepth: 2,
+            children: [
+              '/zh/deploy/',
+            ]
+          },
+          {
+            title: '更多',
+            collapsable: false,
+            sidebarDepth: 2,
             children: [
               '/zh/more/',
               '/zh/more/contact',

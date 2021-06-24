@@ -5,8 +5,8 @@
 默认情况下，当你使用命令行工具，成功创建一个项目后，在项目的 `lib/app/controller` 文件夹，会自动创建一个名字为 `HomeController`，这是一个示例控制器，它的基本代码如下
 
 ```dart
-import 'package:dart_mars_demo/bootstrap/Context.dart';
-import 'package:dart_mars_demo/bootstrap/meta/RouteMeta.dart';
+import 'package:project_name/bootstrap/Context.dart';
+import 'package:project_name/bootstrap/meta/RouteMeta.dart';
 
 class HomeController {
   @RouteMeta('/', 'GET')
@@ -27,8 +27,8 @@ class HomeController {
 
 ## 如何导入依赖
 ```dart
-import 'package:dart_mars_demo/bootstrap/Context.dart';
-import 'package:dart_mars_demo/bootstrap/meta/RouteMeta.dart';
+import 'package:project_name/bootstrap/Context.dart';
+import 'package:project_name/bootstrap/meta/RouteMeta.dart';
 ```
 
 依赖是指当前文件所需要的外部功能文件。上面的代码，导入了两个依赖。

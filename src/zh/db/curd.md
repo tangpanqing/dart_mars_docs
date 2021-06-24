@@ -4,10 +4,10 @@
 
 实际使用过程中，通常会与模型结合使用，以下只是基本操作的展示。
 
-使用 `Db` 相关类，需要先导入 `Db` 类，假设你的项目名为 `dart_mars_demo`, 则需要如下导包
+使用 `Db` 相关类，需要先导入 `Db` 类，假设你的项目名为 `project_name`, 则需要如下导包
 
 ```dart
-import 'package:dart_mars_demo/bootstrap/db/Db.dart';
+import 'package:project_name/bootstrap/db/Db.dart';
 ```
 
 ## 如何查询数据 
