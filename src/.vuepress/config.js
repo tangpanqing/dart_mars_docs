@@ -78,6 +78,7 @@ module.exports = {
               '/zh/use/uploadAndDownload',
               '/zh/use/cache',
               '/zh/use/messageQueue',
+              '/zh/use/cmd',
             ]
           },
           {
@@ -89,17 +90,6 @@ module.exports = {
               '/zh/db/connection',
               '/zh/db/curd',
               '/zh/db/link',
-            ]
-          },
-          {
-            title: '命令行',
-            collapsable: false,
-            sidebarDepth: 2,
-            children: [
-              '/zh/cmd/',
-              '/zh/cmd/create',
-              '/zh/cmd/serve',
-              '/zh/cmd/compile',
             ]
           },
           {
