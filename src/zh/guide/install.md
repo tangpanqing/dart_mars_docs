@@ -37,7 +37,7 @@ hello world
 如果你已经安装过 `Flutter` 开发环境，那说明你系统内已经支持 `Dart` 语言环境，因此不需要重复安装。
 :::
 
-## 在Windows平台安装Dart语言环境
+## 如何在Win平台安装Dart语言环境
 
 如果你已经安装 `Chocolatey` ， 推荐使用以下命令来安装 `Dart` 语言环境
 
@@ -47,7 +47,7 @@ choco install dart-sdk
 
 当然，你也可以通过安装包来安装 `Dart` 环境，[安装包下载地址](https://gekorm.com/dart-windows/)
 
-## 在Linux平台安装Dart语言环境
+## 如何在Linux平台安装Dart语言环境
 
 如果你使用的是 `Debian` / `Ubuntu` 等系统，需要先更新 `apt` 的仓库
 
@@ -65,7 +65,7 @@ sudo apt-get update
 sudo apt-get install dart
 ```
 
-## 在Mac平台安装Dart语言环境
+## 如何在Mac平台安装Dart语言环境
 
 如果你使用的是 `mac` 系统，可以使用 `homebrew` 来安装
 

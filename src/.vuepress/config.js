@@ -60,7 +60,6 @@ module.exports = {
             children: [
               '/zh/guide/',
               '/zh/guide/install',
-              '/zh/guide/update',
             ]
           },
           {
@@ -94,7 +93,7 @@ module.exports = {
           {
             title: '更多',
             collapsable: false,
-            sidebarDepth: 1,
+            sidebarDepth: 0,
             children: [
               '/zh/more/',
             ]
