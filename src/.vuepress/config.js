@@ -94,7 +94,7 @@ module.exports = {
           {
             title: '更多',
             collapsable: false,
-            sidebarDepth: 2,
+            sidebarDepth: 1,
             children: [
               '/zh/more/',
             ]

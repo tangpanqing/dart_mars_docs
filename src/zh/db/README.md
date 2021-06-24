@@ -26,7 +26,7 @@
 | dbPassword   | root          | 数据库连接密码       |
 | dbName       | example       | 数据库名            |
 
-当你使用 `--serve dev/test/prod` 命令时，系统加载不同的数据库连接信息。
+当你使用 `--serve dev/test/prod` 命令时，`DartMars` 将加载对应环境中的数据库连接信息。
 
 ## 数据库操作有哪些
 
