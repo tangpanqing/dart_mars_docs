@@ -87,7 +87,6 @@ module.exports = {
             sidebarDepth: 2,
             children: [
               '/zh/db/',
-              '/zh/db/connection',
               '/zh/db/curd',
               '/zh/db/link',
             ]
@@ -98,7 +97,6 @@ module.exports = {
             sidebarDepth: 2,
             children: [
               '/zh/more/',
-              '/zh/more/contact',
             ]
           },
         ]
