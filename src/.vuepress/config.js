@@ -77,6 +77,8 @@ module.exports = {
               '/zh/use/verify',
               '/zh/use/upload',
               '/zh/use/download',
+              '/zh/use/cache',
+              '/zh/use/messageQueue',
             ]
           },
           {
@@ -107,6 +109,8 @@ module.exports = {
             sidebarDepth: 2,
             children: [
               '/zh/deploy/',
+              '/zh/deploy/withNothting',
+              '/zh/deploy/withNginx',
             ]
           },
           {
