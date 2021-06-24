@@ -77,6 +77,7 @@ module.exports = {
               '/zh/use/uploadAndDownload',
               '/zh/use/cache',
               '/zh/use/messageQueue',
+              '/zh/use/deploy',
               '/zh/use/cmd',
             ]
           },
