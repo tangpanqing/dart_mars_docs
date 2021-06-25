@@ -27,6 +27,19 @@ List<Article> articleList = list.map((e) => Article.fromJson(ConvertHelper.keyTo
 SElECT * FROM article
 ```
 
+如果需要查询单条数据
+
+```dart
+Map<String,dynamic> item = await Db('article').find();
+```
+
+它产生的 `SQL` 语句如下：
+
+```sql
+SElECT * FROM article LIMIT 0,1
+```
+
+
 ## 如何增加数据 
 
 ```dart
@@ -39,7 +52,7 @@ Map<String,dynamic> data = {
 await Db('article').install(data);
 ```
 
-通过以上代码，即可增加一条记录，它产生的 `SQL` 语句为：
+通过以上代码，它产生的 `SQL` 语句为：
 
 ```sql
 INSERT INTO article (title,desc,create_time) VALUES ('DartMars is greate','Yes, it is',1623766514)
@@ -61,7 +74,7 @@ Map<String,dynamic> data = {
 await Db('article').where(condition).update(data);
 ```
 
-通过以上代码，即可修改一条记录，它产生的 `SQL` 语句为：
+通过以上代码，它产生的 `SQL` 语句为：
 
 ```sql
 UPDATE article SET title = 'DartMars is wondeful' WHERE id = 1
@@ -81,10 +94,26 @@ List<DbColumn> condition = [
 await Db('article').where(condition).delete();
 ```
 
-通过以上代码，即可删除一条记录，它产生的 `SQL` 语句为：
+通过以上代码，它产生的 `SQL` 语句为：
 
 ```sql
 DELETE FROM article WHERE id = 1
 ```
 
 注意，请记得导入 `DbColumn` 依赖文件
+
+## 如何使用原生查询 
+
+如果使用原生查询，可以使用 `.query`
+
+```dart
+String sql = 'SELECT * FROM article';
+
+await Db.query(sql);
+```
+
+通过以上代码，它产生的 `SQL` 语句为：
+
+```sql
+SELECT * FROM article
+```

@@ -1,6 +1,12 @@
 ## 如何验证数据
 
-`DartMars` 默认提供了一些常用的验证数据的方法，你可以使用 `VerifyHelper` 来使用他们。
+`DartMars` 默认提供了一些常用的验证数据的方法，封装在验证帮助类 `VerifyHelper`。
+
+使用 `VerifyHelper` 相关类，需要先导入 `VerifyHelper` 类，假设你的项目名为 `project_name`, 则需要如下导包
+
+```dart
+import 'package:project_name/bootstrap/helper/VerifyHelper.dart';
+```
 
 例如验证某字符串是不是空字符串
 

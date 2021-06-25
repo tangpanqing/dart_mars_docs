@@ -1,16 +1,25 @@
-## 如何安装DartMars
+## 如何开始DartMars项目
 
 `DartMars` 是基于 `Dart` 语言的服务端框架，因此你的计算机必须支持 `Dart` 语言环境。
 
-如果你的计算机还没有安装 `Dart` 语言环境，请按照此指引 [如何安装Dart语言环境](#如何安装Dart语言环境)
+如果你的计算机还没有安装 `Dart` 语言环境，请按照此指引 [如何安装Dart语言环境](install.html#如何安装dart语言环境)
 
 如果你的计算机还已经安装 `Dart` 语言环境，打开你的命令行工具，键入如下内容，即可开始一个 `Dart` 服务端项目
 
 ```bash
+# 安装DartMars
 dart pub global activate --source git https://github.com/tangpanqing/dart_mars.git
+
+# 创建项目
 dart pub global run dart_mars --create project_name
+
+# 进入目录
 cd project_name
+
+# 获取依赖
 dart pub global run dart_mars --get 
+
+# 启动项目
 dart pub global run dart_mars --serve dev
 ```
 

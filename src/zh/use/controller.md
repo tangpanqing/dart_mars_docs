@@ -31,7 +31,7 @@ import 'package:project_name/bootstrap/Context.dart';
 import 'package:project_name/bootstrap/meta/RouteMeta.dart';
 ```
 
-依赖是指当前文件所需要的外部功能文件。上面的代码，导入了两个依赖。
+依赖是指当前文件所需要的外部功能文件。上面的代码，导入了两个依赖，假设你的项目名为 `project_name`。
 
 `Context.dart` 文件里，定义的有 `Context` 类，它提供了一些接收信息的方法，以及输出信息的方法。
 

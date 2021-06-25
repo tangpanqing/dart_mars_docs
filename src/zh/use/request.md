@@ -19,6 +19,7 @@ String text = ctx.getString('text');
 | getDouble         | 获取浮点数      |  1.1, -3.1   |  0          |
 | getPositiveDouble | 获取浮点数,正数 |  1.1         |  0          |
 | getNegativeDouble | 获取浮点数,负数 |  -3.1        |  0          |
+| getUploadFile     | 获取上传文件    |              |             |
 
 注意：
 

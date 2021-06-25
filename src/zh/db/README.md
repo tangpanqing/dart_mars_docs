@@ -64,8 +64,6 @@
 | union        | 将查询结果合并     |
 | comment      | 将SQL语句添加注释  |
 | force        | 使用强制索引       |
-| strict       | 是否严格检查字段名  |
-| cache        | 是否使用查询缓存    |
 | fetchSql     | 直接返回SQL语句    |
 | partition    | MySQL分区操作      |
 | duplicate    | 记录唯一           |
