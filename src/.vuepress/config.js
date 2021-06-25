@@ -30,11 +30,10 @@ module.exports = {
         },
         algolia: {},
         nav: [
-         
+          { text: '首页', link: '/zh/' },
+          { text: '起步', link: '/zh/guide/' }
         ],
         sidebar: {
-          '/': [/* ... */],
-          '/nested/': [/* ... */]
         }
       },
       '/zh/': {
@@ -79,6 +78,7 @@ module.exports = {
               '/zh/use/messageQueue',
               '/zh/use/deploy',
               '/zh/use/cmd',
+              '/zh/use/log',
             ]
           },
           {
@@ -89,6 +89,8 @@ module.exports = {
               '/zh/db/',
               '/zh/db/curd',
               '/zh/db/link',
+              '/zh/db/condition',
+              '/zh/db/trans',
             ]
           },
           {
