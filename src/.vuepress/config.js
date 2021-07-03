@@ -49,7 +49,8 @@ module.exports = {
         algolia: {},
         nav: [
           { text: '首页', link: '/zh/' },
-          { text: '起步', link: '/zh/guide/' }
+          { text: '起步', link: '/zh/guide/' },
+          { text: 'GitHub', link: 'https://github.com/tangpanqing/dart_mars' }
         ],
         sidebar: [
           {
